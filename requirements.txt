@@ -4,8 +4,4 @@ MeCab
 subprocess
 termextract.mecab
 termextract.core
-re
-sklearn.feature_extraction.text 
-sklearn.metrics.pairwise 
-tqdm
 mecab-python3
