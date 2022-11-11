@@ -50,25 +50,6 @@ def term_word(mecab_1news,Threshold):
 
   return word
 
-def wakachi2(doc):
-  sentence = []
-  node = tagger.parseToNode(doc)
-  while node:
-    word = node.feature.split(",")[6]
-    hinsi = node.feature.split(',')[0]
-    if word != '*' and hinsi != '助詞':
-      sentence.append(word)
-    node = node.next
-
-  return sentence
-
-def jp_match(doc):
-  pattern = '[\u2E80-\u2FDF\u3005-\u3007\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF\U00020000-\U0002EBEF]+|[\u30A1-\u30FF]+|[\u3041-\u309F]+'
-  re_pattern = re.compile(pattern)
-  if re_pattern.search(doc):
-    return True
-  return False
-
 
 def keitaiso(file):
   keyword_df = pd.DataFrame()
