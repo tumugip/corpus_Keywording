@@ -4,11 +4,7 @@ import MeCab
 import subprocess
 import termextract.mecab
 import termextract.core
-import re
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-from tqdm import tqdm
-tqdm.pandas()
+
 
 
 cmd4='echo `mecab-config --dicdir`"/mecab-ipadic-neologd"'
