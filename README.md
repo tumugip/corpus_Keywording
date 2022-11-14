@@ -10,7 +10,7 @@ termextractをビルドするためのフォルダが必要となる。
 *インストール手順*
 以下のコードを実行する
 1. `wget http://gensen.dl.itc.u-tokyo.ac.jp/soft/pytermextract-0_02.zip`
-2. `unzip /content/pytermextract-0_02.zip`
+2. `unzip 先ほどダウンロードしたファイルのパス`
 3. `python setup.py install`
 
 *ABCIの場合*
