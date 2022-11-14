@@ -1,5 +1,8 @@
 # corpus_Keywording
 
+`main_jsonl.py`:３種類のキーワード化をすることができます
+`light_main_jsonl`:termextractを使用しないキーワード化ができます
+
 
 ## termextractの準備
 *ABCIで使用する場合のみ実行*  
