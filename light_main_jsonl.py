@@ -160,9 +160,7 @@ def keitaiso(file):
       if i != len(new_all_list)-1:
         sen = sen + ' '
     new_row = pd.DataFrame([[sen,row[2]]],columns=['in','out'])
-    print(new_row)
     keyword_df = pd.concat([keyword_df,new_row])
-    print(keyword_df.head())
 
 
   keyword_df= keyword_df.reset_index(drop=True)
